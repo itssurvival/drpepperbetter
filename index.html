@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr Pepper Fanpage</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">Dr Pepper</div>
+    <nav>
+      <a href="#history">History</a>
+      <a href="#flavors">Flavors</a>
+      <a href="#why">Why It's Better</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="history">
+      <h2>The History</h2>
+      <p>Born in Waco, Texas in 1885, Dr Pepper stands as one of the oldest and most beloved soft drinks in America. The brainchild of Charles Alderton, this iconic soda introduced a complex blend of 23 flavors, setting it apart from all other drinks on the market. Over the decades, Dr Pepper has woven itself into the fabric of American culture, influencing advertising, pop culture, and the hearts of millions.</p>
+      <p>The recipe remains a closely guarded secret, preserving its unique taste through generations. From its humble beginnings in soda fountains to international availability, Dr Pepper's journey is a testament to its enduring appeal and innovative spirit.</p>
+      <p>Throughout history, it has inspired countless slogans and campaigns, each echoing the brand’s originality and bold character. Whether enjoyed in a glass bottle or a modern can, Dr Pepper’s flavor continues to bring people together to celebrate refreshment and creativity.</p>
+      <p>Its legacy is not just in its taste but in the passionate community of fans worldwide who proudly choose Dr Pepper as their soda of choice. From Texas to Tokyo, the Dr Pepper story is one of timeless flavor and shared enjoyment.</p>
+    </section>
+
+    <section id="flavors">
+      <h2>Flavors</h2>
+      <ul>
+        <li>Original – The classic and signature Dr Pepper taste with a smooth balance of fruity and spicy notes that have captivated fans for over a century.</li>
+        <li>Cherry – A delightful cherry twist that enhances the original flavor, adding a sweet and vibrant note to the mix.</li>
+        <li>Strawberries & Cream – A creamy and fruity variation combining strawberry sweetness with the classic Dr Pepper base, perfect for those seeking something a little different.</li>
+        <li>Dark Berry – A rich and bold flavor infused with dark berries, delivering a deep and satisfying soda experience for adventurous taste buds.</li>
+        <li>Dr Pepper Zero Sugar – All the flavor, none of the sugar. A perfect choice for those watching their intake but craving that distinctive Dr Pepper taste.</li>
+      </ul>
+      <p>Each variant delivers a unique experience while honoring the signature complexity of the original. Whether you prefer the timeless classic or one of its flavorful relatives, Dr Pepper offers something special for everyone.</p>
+      <p>Fans often mix and match or enjoy seasonal flavors, creating their own personalized Dr Pepper moments. This variety helps keep the brand fresh and exciting, inviting both longtime lovers and new fans alike.</p>
+      <p>From limited editions to permanent staples, the variety of flavors showcases Dr Pepper’s commitment to innovation and quality. No matter the flavor, each sip is a journey of taste exploration.</p>
+      <p>Dr Pepper’s flavor family is a testament to the creativity behind the brand and its desire to satisfy diverse palates across the world.</p>
+    </section>
+
+    <section id="why">
+      <h2>Why We Love It</h2>
+      <p>There’s a reason Dr Pepper has remained a beloved beverage for over 135 years. It’s more than just soda — it’s a bold statement of flavor, personality, and nostalgia. The carefully crafted 23-flavor blend gives Dr Pepper a unique taste that you can’t find anywhere else, perfectly balancing sweet, spicy, and fruity notes.</p>
+      <p>Its unmistakable flavor sparks memories and moments, from family gatherings to summer barbecues. Many fans cherish Dr Pepper not just for its taste, but for what it represents: originality, boldness, and the joy of something different in a sea of ordinary drinks.</p>
+      <p>The versatility of Dr Pepper allows it to be enjoyed straight, as a mixer, or even in recipes, adding its signature touch to countless creations. This adaptability only deepens the love for the brand and its iconic flavor profile.</p>
+      <p>Ultimately, we love Dr Pepper because it stands out, invites curiosity, and delivers satisfaction with every sip. It’s a timeless classic that continues to inspire and delight soda lovers everywhere, making it truly one of a kind.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with fizzy love by Jack</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
